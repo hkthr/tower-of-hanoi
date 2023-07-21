@@ -51,7 +51,7 @@ describe('render Log', () => {
       </RecoilRoot>
     );
 
-    expect(screen.queryByText(/09:00:01.234 hello/)).toBeTruthy();
+    expect(screen.queryByText(/\d\d:\d\d:01.234 hello/)).toBeTruthy();
   });
 
 });

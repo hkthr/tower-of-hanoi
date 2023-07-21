@@ -137,8 +137,8 @@ export const getDurationFromSeconds = (seconds: number, language: string) => {
   return new Intl.ListFormat(language, { style: 'long', type: 'unit' }).format(units ?? []);
 }
 
-export const formatTime = (time: number) => {
-  return DateTime.fromMillis(time).toFormat("HH:mm:ss.SSS");
+export const formatTime = (time: number, options: any={}) => {
+  return DateTime.fromMillis(time, options).toFormat("HH:mm:ss.SSS");
 }
 
 // Thanx to match35

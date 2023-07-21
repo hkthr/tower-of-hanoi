@@ -14,8 +14,8 @@ describe('Common Functions', () => {
   });
 
   test('formatTime', () => {
-    expect(formatTime(1689847400456)).toEqual("19:03:20.456");
-    expect(formatTime(123)).toEqual("09:00:00.123");
+    expect(formatTime(1689847400456, {zone: "UTC"})).toEqual("10:03:20.456");
+    expect(formatTime(123, {zone: "UTC"})).toEqual("00:00:00.123");
   });
 });
 
