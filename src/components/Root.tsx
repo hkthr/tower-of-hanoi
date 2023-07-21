@@ -16,6 +16,7 @@ const MainView = () => {
 
   useEffect(() => {
     i18n.changeLanguage(language);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
   return (

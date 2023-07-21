@@ -19,7 +19,7 @@ const Operation = (props: OperationProps) => {
   const [opeState, setOpeState] = useRecoilState(hanoiOpeState);
 
   const handleClick = (name: String) => (event: React.MouseEvent<HTMLElement>) => {
-    const nextState = getNextState(props.action, opeState, setOpeState);
+    getNextState(props.action, opeState, setOpeState);
     if (props.handler != null) {
       props.handler();
     }

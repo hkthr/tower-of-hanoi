@@ -79,6 +79,7 @@ const TimerProvider = (props: any) => {
         break;
     }
     return () => clearInterval(timerId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state, tick]);
 
   return (

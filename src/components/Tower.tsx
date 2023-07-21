@@ -42,6 +42,7 @@ const Tower = (props: TowerProps) => {
     const cardWidth = getElementProperty("width");
     setViewBox(`0 0 ${cardWidth} ${CARD_MIN_HEIGHT}`);
     setMid(cardWidth / 2);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -53,6 +54,7 @@ const Tower = (props: TowerProps) => {
     setViewBox(`0 0 ${cardWidth} ${viewBoxHeight}`);
     const cardHeight = viewBoxHeight + NAME_HEIGHT + 4;
     setCardHeight(cardHeight);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [settings.diskNum]);
 
   let diskElems: ReactElement[] = [];

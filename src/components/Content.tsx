@@ -86,6 +86,7 @@ const Content = (props: ContentProps) => {
         doFinish();
         break;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, state]);
 
   useEffect(() => {
